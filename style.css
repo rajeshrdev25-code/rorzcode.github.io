@@ -1220,3 +1220,26 @@
     margin: 8px auto;
   }
 }
+
+
+/* Default (Desktop/Laptop View) */
+.logo-desktop {
+  display: inline-block;
+  height: 75px; /* adjust as needed */
+}
+
+.logo-mobile {
+  display: none;
+}
+
+/* Mobile/Tablet View */
+@media (max-width: 991px) { /* Bootstrap's lg breakpoint */
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: inline-block;
+    height: 60px; /* adjust as needed */
+  }
+}
